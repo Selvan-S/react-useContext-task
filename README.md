@@ -1,6 +1,6 @@
 # React Router Task
 ## About
-This is an React Router Task. Built using React, and Tailwind CSS.
+This is an React useContext Task. Built using React, and Tailwind CSS.
 
 - [Live Preview]()
 
