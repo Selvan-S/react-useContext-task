@@ -6,7 +6,7 @@ function CartItem({ val, index }) {
 
   const [itemCount, setItemCount] = useState(1);
   const [stockCount, setStockCount] = useState(val.stock);
-  const discountprice = val.price * (val.discountPercentage / 100);
+  const discountprice = val.price - val.price * (val.discountPercentage / 100);
   const [discountPercentage, setDiscountPercentage] = useState(discountprice);
   return (
     <div className="flex flex-col p-4 text-lg font-semibold shadow-md border rounded-sm">

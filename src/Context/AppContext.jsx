@@ -9,7 +9,7 @@ function AppContext({ children }) {
   const initialSubtotalValue = () => {
     return productsData.reduce((acc, val) => {
       let discountPrice = parseFloat(
-        (val.price * (val.discountPercentage / 100)).toFixed(2)
+        (val.price - val.price * (val.discountPercentage / 100)).toFixed(2)
       );
       let subtotal = acc + discountPrice;
       return subtotal;
